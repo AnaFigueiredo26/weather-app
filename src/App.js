@@ -1,20 +1,10 @@
+import SearchBar from './components/searchBar';
+
 function App() {
   return (
     <div className="flex w-full bg-yellow-50">
       <div className="fixed flex h-full min-w-[300px] flex-col gap-8 bg-white p-12 px-8">
-        <form className="flex">
-          <label className="hidden" htmlFor="location">
-            Search for your location:
-          </label>
-          <input
-            className="grow border px-2 py-1"
-            type="text"
-            name="location"
-            id="location"
-            placeholder="Location"
-          />
-          <button className="bg-gray-700 px-2 py-1 text-white">Search</button>
-        </form>
+        <SearchBar />
         <section className="flex max-h-[800px] grow flex-col justify-between">
           <div className="h-64 w-full bg-gray-300"></div>
           <div className="flex flex-col gap-4">
